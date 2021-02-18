@@ -1,0 +1,99 @@
+#form {
+  padding: 110px 20px 0px 20px;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#form input, textarea {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  border: 1.2px solid #ebebeb;
+  padding: 12px;
+  border-radius: 3px;
+  color: #333;
+  transition: border-color 0.4s ease-in-out;
+}
+
+#form button {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  width: 60%;
+  color: #fff;
+  background-color: #0061ff;
+  transition: ease-in-out 0.4s;
+  font-size: 15px;
+}
+
+#form button:hover {
+  box-shadow: 0 4px 8px rgba(0, 30, 84, 0.12);
+}
+
+#form textarea {
+  resize: none;
+  height: 120px;
+}
+
+#form input:focus, #form textarea:focus {
+  border-color: #0070e0;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.modal .content {
+  position: relative;
+  top: 25%;
+  border-radius: 3px;
+  margin: 0 25%;
+  background-color: #fefefe;
+  padding: 15px;
+  box-shadow: 0px 1px 1px #d0d4d9;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.modal .content h3 {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.modal .content p {
+  margin-bottom: 20px;
+}
+
+.modal .content .title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.container {
+  background: url(../pictures/bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 1px;
+  cursor: pointer;
+  font-size: 45px;
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0px 1px 1px #d0d4d9;
+  z-index: 98;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #1e1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #0061ff;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover .circle {
+  transform: translateX(8px)
+}
+
+.logo span {
+  color: #0061ff;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav a {
+  color: #1e1919;
+  padding: 0px 20px;
+  transition: 0.3s ease;
+}
+
+header nav a:hover {
+  color: #0061ff;
+}
+
+.contact {
+  font-size: 14px;
+  color: #0061ff;
+  border: 1px solid #0061ff;
+  border-radius: 4px;
+  padding: 8px 20px;
+  transition: 0.3s ease;
+}
+
+.contact:hover {
+  color: #fff;
+  background-color: #0061ff;
+}
+
+/* Mobile css */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 24px;
+  height: 2px;
+  margin: 3.5px 0;
+  background-color: #1e1919;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: 99;
+  background-color: #24252a;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out 0s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 55px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.overlay nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay nav a {
+  padding: 15px;
+  font-size: 36px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  header nav a, .contact {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}

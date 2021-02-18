@@ -1,0 +1,183 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-image: url('../pictures/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner p {
+  font-size: 56px;
+  margin-bottom: 18px;
+  cursor: default;
+}
+
+.banner svg {
+  position: absolute;
+  fill: #fff;
+  cursor: pointer;
+  top: 80%;
+  margin: 0 auto;
+  height: 90px;
+  animation: down-page 0.7s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes down-page {
+  0% {
+    transform: translateY(0px)rotate(180deg);
+  }
+  100% {
+    transform: translateY(10px)rotate(180deg);
+  }
+}
+
+.collb {
+  margin: 70px 0;
+  text-align: center;
+  color: #80868b;
+}
+
+.collb .loges {
+  width: 70%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.collb .loges img {
+  width: 100px;
+}
+
+.info {
+  text-align: center;
+}
+
+.info p {
+  font-size: 30px;
+}
+
+.info-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 100px auto;
+  gap: 20px;
+}
+
+.info-card div {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  border-top: 5px solid #fff;
+  width: 55%;
+  transition: .3s;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-card div:hover {
+  transform: scale(1.04);
+  height: 320px;
+  margin: 0px;
+}
+
+.info-card div span {
+  font-size: 22px;
+  color: transparent;
+  letter-spacing: .5px;
+  transition: .6s;
+}
+
+.info-card div:hover span {
+  color: #fff;
+}
+
+.work {
+  background-image: url('../pictures/bg2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  color: #fff;
+}
+
+.work p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.work .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.work .info div p {
+  font-size: 16px;
+}
+
+.work .info div span {
+  font-size: 14px;
+}
+
+.map p {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social img {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.social, .copyright {
+  margin: 1rem;
+  letter-spacing: 1px;
+}
+
+footer {
+  background-color: #f7f7f7;
+  padding: 1rem 0;
+  text-align: center;
+  color: #787878;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    padding: 0 12px;
+  }
+  .banner p {
+    font-size: 48px;
+  }
+  .work {
+    height: 800px;
+  }
+  .work .info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info div {
+    margin-top: 40px;
+  }
+}
